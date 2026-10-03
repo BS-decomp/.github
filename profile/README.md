@@ -10,10 +10,11 @@ For each game version we take the original APK, export the Unity project, repair
 
 | Version | Repository | Status |
 | --- | --- | --- |
+| 1.8.1 | [BS-decomp/1.8.1](https://github.com/BS-decomp/1.8.1) | 🕓 Planned — repository created, recovery not started |
 | 3.7.0 | [BS-decomp/3.7.0](https://github.com/BS-decomp/3.7.0) | ✅ Published — recovered Unity project, recovery tools, technical docs |
-| 1.8.1 | — | 🕓 Planned |
-| 4.1.0 | — | 🕓 Planned |
+| 4.1.0 | [BS-decomp/4.1.0](https://github.com/BS-decomp/4.1.0) | 🚧 In development — repository bootstrapped, APK confirmed (Unity 4.7.2f1, Mono, 58 scenes), export and repair in progress |
 | 5.0.4 | — | 🕓 Planned |
+| 6.5.1 | [BS-decomp/6.5.1](https://github.com/BS-decomp/6.5.1) | 🚧 In development — recovered project, tooling, and docs are being published incrementally |
 | others | — | 💤 Under consideration, depending on available sources |
 
 Repository names follow the game version (`<major>.<minor>.<patch>`).
@@ -28,8 +29,9 @@ Most version repositories follow the same layout:
 | `original/` | Reference material from the original Android release (e.g. the APK) |
 | `tools/` | Scripts and Unity editor tools reproducing parts of the recovery process |
 | `docs/` | Technical notes: export status, scene names, geometry, shaders, lightmaps, compatibility |
+| `AGENTS.md` | Working rules for agents and contributors, where present (in Russian) |
 
-The recovered project in `client/` already contains the repairs known at publish time — you do not need to run any installer scripts just to open it. Open `client/` in the Unity version listed in that repository's README (for example, 3.7.0 targets **Unity 5.6.7f1**; the Unity version of the original build may differ between game versions).
+The recovered project in `client/` already contains the repairs known at publish time — you do not need to run any installer scripts just to open it. Open `client/` in the Unity version listed in that repository's README; the target editor and the Unity version of the original build both differ between game versions (for example, 3.7.0 targets **Unity 5.6.7f1**, while 6.5.1 targets **Unity 2021.3.45f2 LTS**).
 
 ## Limitations
 
